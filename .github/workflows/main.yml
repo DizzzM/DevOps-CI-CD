@@ -17,7 +17,7 @@ jobs:
       with:
         fetch-depth: 0
 
-    - name: Lint
+    - name: Linter
       uses: github/super-linter@v4.9.7
       env:
         VALIDATE_ALL_CODEBASE: false
@@ -30,7 +30,7 @@ jobs:
         username: dizzzm
         password: ${{ secrets.DOCKER_PASSWORD }}
     
-    - name: Buildx
+    - name: Set up Buildx
       id: docker_build
       uses: docker/setup-buildx-action@v1
 
