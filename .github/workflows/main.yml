@@ -40,4 +40,4 @@ jobs:
         context: .
         file: ./Dockerfile
         push: true
-        tags: dizzzm/coding/devops-ci-cd:latest
+        tags: dizzzm/devops-ci-cd:latest
